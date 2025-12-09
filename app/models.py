@@ -23,12 +23,3 @@ class Product(Base):
 
     def __repr__(self):
         return self.name
-    
-    def to_dict(self) -> dict:
-        return {
-            'id': self.product_id,
-            'name': self.name,
-            'category': self.category,
-            'price': self.price,
-            'in_stock': self.in_stock,
-        }
